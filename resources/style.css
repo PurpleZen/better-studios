@@ -1,0 +1,312 @@
+body {
+  background-color: #EADDCA;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  height: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #FFBF00;
+  box-shadow: 0 8px 16px 0 rgba(210,198,181,1), 0 6px 20px 0 rgba(210,198,181,0.1);
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.name-button { 
+  display: inline-block;
+  justify-content: center;
+  background-color: #fcfcfc;
+  text-decoration: none;
+  height: 30px;
+  color: #FFBF00;
+  font-weight: 500;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: -10px;
+  margin-left: -15px;
+  box-shadow: 10px 0px 10px -5px #E5AB00;
+}
+
+.nav-drop {
+  float: right;
+  background-color: #E97451;
+  border-radius: 0px 30px 30px 0px;
+  text-decoration: none;
+  height: 30px;
+  width: 90px;
+  color: #fcfcfc;
+  font-weight: 500;
+  border: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 18px;
+  margin-top: -10px;
+  margin-right: -15px;
+  transition: transform 0.4s;
+}
+
+.nav-button-github {
+  float: right;
+  background-color: #E97451;
+  border-radius: 0px 30px 30px 0px;
+  text-decoration: none;
+  height: 30px;
+  width: 100px;
+  color: #fcfcfc;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 18px;
+  margin-top: -10px;
+  margin-right: -20px;
+  transition: transform 0.4s;
+}
+
+.nav-button-scratch {
+  float: right;
+  background-color: #E97451;
+  border-radius: 0px 30px 30px 0px;
+  text-decoration: none;
+  height: 30px;
+  width: 100px;
+  color: #fcfcfc;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 18px;
+  margin-top: -10px;
+  margin-right: -20px;
+  transition: transform 0.4s;
+}
+
+.indent-button {
+  float: right;
+  background-color: #FFBF00;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -10px;
+  margin-right: -20px;
+  transition: transform 0.4s;
+  box-shadow: 10px 0px 10px -5px #D16848
+}
+
+.plus-drop {
+  position: absolute;
+  display: none;
+  background-color: transparent;
+  text-decoration: none;
+  height: auto;
+  width: 100px;
+  min-height: 100px;
+  z-index: -1;
+}
+
+.drop-ocular {
+  background-color: #E97451;
+  border-radius: 10px 30px 30px 10px;
+  text-decoration: none;
+  height: 30px;
+  width: 80px;
+  color: #fcfcfc;
+  font-weight: 500;
+  border: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.drop-post {
+  background-color: #E97451;
+  border-radius: 10px 30px 30px 10px;
+  text-decoration: none;
+  height: 30px;
+  width: 80px;
+  color: #fcfcfc;
+  font-weight: 500;
+  border: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.drop-dev {
+  background-color: #E97451;
+  border-radius: 10px 30px 30px 10px;
+  text-decoration: none;
+  height: 30px;
+  width: 80px;
+  color: #fcfcfc;
+  font-weight: 500;
+  border: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.nav-drop:hover .plus-drop {
+  display: grid;
+}
+
+.nav-drop:hover {
+  background-color: #D16848;
+  color: #fcfcfc;
+}
+
+.nav-button-github:hover {
+  background-color: #333;
+  color: #fcfcfc;
+}
+
+.nav-button-scratch:hover {
+  background-color: #4d97ff;
+  color: #fcfcfc;
+}
+
+.nav-button-scratch:hover + .indent-button {
+  box-shadow: 10px 0px 10px -5px #4587E5
+}
+
+.drop-ocular:hover {
+  background-color: #0fbd8c;
+}
+
+.drop-post:hover {
+  background-color: #f54260;
+}
+
+.drop-dev:hover {
+  background-color: #34495e;
+}
+
+.bk-button {
+  display: inline-block;
+  justify-content: center;
+  background-color: #fff;
+  border: 3px solid #E97451;
+  text-decoration: none;
+  height: 20px;
+  color: #41445a;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeslideInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+}
+
+.content-bk {
+  background-color: #fcfcfc;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  box-shadow: 0px 0px 20px #D2C6B5;
+  display: inline-grid;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  border-radius: 30px;
+  text-align: left;
+  color: #34495e;
+  line-height: 1.8;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  animation: fadeslideInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+}
+
+.tiles {
+  background-color: #34495e;
+  box-shadow: 0px 0px 20px #D2C6B5;
+  width: 250px;
+  height: 190px;
+  display: inline-grid;
+  padding-bottom: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fcfcfc;
+  line-height: 1.8;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+img {
+  border-radius: 30px 30px 0 0;
+}
+
+.tiles:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px #D2C6B5;
+}
+
+@keyframes fadeslideInAnimation {
+  0% {
+    opacity: 0; scale: 0;
+  }
+  100% {
+    opacity: 1; scale: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

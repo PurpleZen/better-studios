@@ -1,0 +1,1 @@
+void(document.head.appendChild(Object.assign(document.createElement('style'), { textContent: ".studio-page { background-color: #fcfcfc} .replies.collapsed > .comment:last-of-type:after { background: none}"})));
